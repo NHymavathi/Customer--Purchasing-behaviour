@@ -4,31 +4,31 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Customer Purchase Prediction</title>
-  <link rel="stylesheet" href="/static/style.css"/>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
     <h1>Customer Purchase Prediction</h1>
     <form id="prediction-form">
-      <label for="age">Age:</label>
+      <label for="age">Age:</label><br>
       <input type="number" id="age" name="age" required min="18" max="100" />
 
-      <label for="annual_income">Annual Income ($):</label>
+      <label for="annual_income">Annual Income ($):</label><br>
       <input type="number" id="annual_income" name="annual_income" required min="0" />
 
-      <label for="purchase_amount">Purchase Amount ($):</label>
+      <label for="purchase_amount">Purchase Amount ($):</label><br?
       <input type="number" id="purchase_amount" name="purchase_amount" required min="0" />
 
-      <label for="region">Region:</label>
+      <label for="region">Region:</label><br>
       <select id="region" name="region" required>
         <option value="">--Select Region--</option>
         <option value="North">North</option>
         <option value="South">South</option>
         <option value="East">East</option>
         <option value="West">West</option>
-      </select>
+      </select><br>
 
-      <label for="purchase_frequency">Purchase Frequency (per year):</label>
+      <label for="purchase_frequency">Purchase Frequency (per year):</label><br>
       <input type="number" id="purchase_frequency" name="purchase_frequency" required min="0" />
 
       <button type="submit">Predict Purchase</button>
